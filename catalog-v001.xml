@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/wlan" uri="wlan.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1542970079705" name="http://www.semanticweb.org/wlan" uri="wlan.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1542971306604" name="http://www.semanticweb.org/iss_v1" uri="iss_v1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1542971306604" name="http://www.semanticweb.org/wlan" uri="wlan.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1542971306604" name="http://www.w3.org/ns/sosa/" uri="sosa_modified.owl"/>
     </group>
 </catalog>
