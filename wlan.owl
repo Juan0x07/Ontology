@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/wlan#"
+     xml:base="http://www.semanticweb.org/wlan"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/wlan"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/wlan#OWLObjectProperty_260e3a2f_a83e_4f85_a8c5_353129bb20e9 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wlan#OWLObjectProperty_260e3a2f_a83e_4f85_a8c5_353129bb20e9">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wlan#OWLClass_aea2f8a9_1516_4c76_b9aa_581c483baa06"/>
+        <rdfs:label xml:lang="fr">hasRSSI</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wlan#OWLObjectProperty_80d01a47_5aed_4490_a17d_6351615b34a4 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wlan#OWLObjectProperty_80d01a47_5aed_4490_a17d_6351615b34a4">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wlan#OWLClass_0c1dc648_6b7e_48d5_b60b_6d75e27a4120"/>
+        <rdfs:label xml:lang="fr">hasSSID</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/wlan#OWLObjectProperty_f1fdc949_799e_4800_af89_8895157524d0 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/wlan#OWLObjectProperty_f1fdc949_799e_4800_af89_8895157524d0">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/wlan#OWLClass_081a8ee1_fd80_406a_a635_2fd6217dafcc"/>
+        <rdfs:label xml:lang="fr">hasBSSID</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/wlan#OWLDataProperty_c7c20c9a_f210_44dc_9019_9b17c46f2838 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/wlan#OWLDataProperty_c7c20c9a_f210_44dc_9019_9b17c46f2838">
+        <rdfs:label xml:lang="fr">hasValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/wlan#OWLClass_042243f5_9eb0_4d19_b84b_98f896f8f29a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wlan#OWLClass_042243f5_9eb0_4d19_b84b_98f896f8f29a">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wlan#OWLClass_666ea3ec_03b4_48e6_9daa_5e51f17aa7a4"/>
+        <rdfs:label xml:lang="fr">Bluetooth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wlan#OWLClass_081a8ee1_fd80_406a_a635_2fd6217dafcc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wlan#OWLClass_081a8ee1_fd80_406a_a635_2fd6217dafcc">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/wlan#OWLDataProperty_c7c20c9a_f210_44dc_9019_9b17c46f2838"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wlan#OWLClass_f605db6c_4191_4acf_8f48_cefbaff1b281"/>
+        <rdfs:comment xml:lang="en">8-bit labels that conform to MAC-48 conventions</rdfs:comment>
+        <rdfs:label xml:lang="fr">BSSID</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wlan#OWLClass_0c1dc648_6b7e_48d5_b60b_6d75e27a4120 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wlan#OWLClass_0c1dc648_6b7e_48d5_b60b_6d75e27a4120">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/wlan#OWLDataProperty_c7c20c9a_f210_44dc_9019_9b17c46f2838"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wlan#OWLClass_f605db6c_4191_4acf_8f48_cefbaff1b281"/>
+        <rdfs:comment xml:lang="en">Service Set Identifier : network names</rdfs:comment>
+        <rdfs:label xml:lang="fr">SSID</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wlan#OWLClass_666ea3ec_03b4_48e6_9daa_5e51f17aa7a4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wlan#OWLClass_666ea3ec_03b4_48e6_9daa_5e51f17aa7a4">
+        <rdfs:label xml:lang="fr">Signal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wlan#OWLClass_6ff9bebb_1698_41f7_9206_91dc8e478949 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wlan#OWLClass_6ff9bebb_1698_41f7_9206_91dc8e478949">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/wlan#OWLObjectProperty_260e3a2f_a83e_4f85_a8c5_353129bb20e9"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/wlan#OWLClass_aea2f8a9_1516_4c76_b9aa_581c483baa06"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/wlan#OWLObjectProperty_80d01a47_5aed_4490_a17d_6351615b34a4"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/wlan#OWLClass_0c1dc648_6b7e_48d5_b60b_6d75e27a4120"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/wlan#OWLObjectProperty_f1fdc949_799e_4800_af89_8895157524d0"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/wlan#OWLClass_081a8ee1_fd80_406a_a635_2fd6217dafcc"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wlan#OWLClass_666ea3ec_03b4_48e6_9daa_5e51f17aa7a4"/>
+        <rdfs:comment xml:lang="en">Wi-Fi is technology for radio wireless local area networking of devices based on the IEEE 802.11 standards.</rdfs:comment>
+        <rdfs:label xml:lang="fr">WiFi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wlan#OWLClass_aea2f8a9_1516_4c76_b9aa_581c483baa06 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wlan#OWLClass_aea2f8a9_1516_4c76_b9aa_581c483baa06">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/wlan#OWLDataProperty_c7c20c9a_f210_44dc_9019_9b17c46f2838"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wlan#OWLClass_f605db6c_4191_4acf_8f48_cefbaff1b281"/>
+        <rdfs:comment xml:lang="en">received signal strength indicator (RSSI) : a measurement of the power present in a received radio signal</rdfs:comment>
+        <rdfs:label xml:lang="fr">RSSI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wlan#OWLClass_f1dd02be_8809_452e_8306_9a8c8960a80b -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wlan#OWLClass_f1dd02be_8809_452e_8306_9a8c8960a80b">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/wlan#OWLClass_666ea3ec_03b4_48e6_9daa_5e51f17aa7a4"/>
+        <rdfs:label xml:lang="fr">LoRa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/wlan#OWLClass_f605db6c_4191_4acf_8f48_cefbaff1b281 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/wlan#OWLClass_f605db6c_4191_4acf_8f48_cefbaff1b281">
+        <rdfs:label xml:lang="fr">Value</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
